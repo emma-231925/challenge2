@@ -1,0 +1,164 @@
+:root{
+  --lightblue: lightblue;
+  --darkblue: #104c68;
+  --navy: #203e57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 10px;
+  color: var(--navy);
+}
+
+/* Navigation Bar CSS */
+#navBar{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: var(--darkblue);
+}
+
+#navBar h1{
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--lightblue);
+  width: 20%;
+  padding: 10px;
+  font-size: 30px;
+  color: var(--darkblue);
+}
+
+#navigation {
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+#navigation a{
+  padding: 15px;
+  font-size: 20px;
+  color: var(--lightblue);
+}
+
+/* Hero Image */
+.hero-banner{
+  display:flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#subtitle {
+  display: flex;
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: var(--darkblue);
+  background-color: var(--lightblue);
+  width:fit-content
+}
+
+/* Defaults for Page Sections */
+.page-section{
+  width: 100%;
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  /* background-color: lightblue; */
+  float: left;
+}
+
+.page-section h2{
+  float: left;
+  text-align: right;
+  width: 20%;
+  color: var(--navy);
+  font-size: 40px;
+  margin: 10px;
+  padding: 10px;
+  border-right: solid var(--navy);
+  /* word-wrap: break-word; */
+}
+
+.content{
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+/* About Me Section */
+
+/* Work */
+/* Defualts for larger project section */
+.main-project{
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+}
+
+.project {
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+}
+
+.content img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 6px solid var(--lightblue);
+}
+
+
+/* Contact */
+
+
+#contact {
+  display: flex;
+}
+
+#contactcontent{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contactcontent a{
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  justify-content: space-evenly;
+  color: var(--navy);
+  border-bottom: solid var(--navy);
+}

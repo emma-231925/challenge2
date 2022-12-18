@@ -1,9 +1,9 @@
 :root{
   --lightblue: lightblue;
-  --darkblue: #104c68;
-  --navy: #203e57;
+  --darkblue: #124258;
 }
 
+/* Global Defaults */
 * {
   box-sizing: border-box;
 }
@@ -24,11 +24,6 @@ h6 {
   margin: 0;
 }
 
-p {
-  margin: 10px;
-  color: var(--navy);
-}
-
 /* Navigation Bar CSS */
 #navBar{
   width: auto;
@@ -40,9 +35,8 @@ p {
   background-color: var(--darkblue);
 }
 
+/* defaults for heading */
 #navBar h1{
-  display: flex;
-  justify-content: flex-end;
   background-color: var(--lightblue);
   width: 20%;
   padding: 10px;
@@ -50,27 +44,27 @@ p {
   color: var(--darkblue);
 }
 
-#navigation {
+/* defaults for navigation buttons */
+#navigation{
   display: flex;
+  justify-content: space-around;
+  width: 30%;
   cursor: pointer;
   text-decoration: none;
   padding: 10px;
-  width: 80%;
-  justify-content: flex-end;
 }
 
 #navigation a{
-  padding: 15px;
   font-size: 20px;
   color: var(--lightblue);
+  text-decoration: none;
+  border-bottom: solid var(--lightblue);
 }
 
 /* Hero Image */
 .hero-banner{
-  display:flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  height: 200px;
+  position: relative;
+  height: 300px;
   width: 100%;
   margin-bottom: 25px;
   background-image: url(../images/02-hero-bg.jpg);
@@ -78,35 +72,37 @@ p {
   background-position: center;
 }
 
-#subtitle {
-  display: flex;
+/* defaults for hero subtitle */
+#subtitle{
+  position: absolute;
+  bottom: 8%;
+  right: 2%;
   padding: 5px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   color: var(--darkblue);
   background-color: var(--lightblue);
-  width:fit-content
+  width: fit-content;
+  z-index: 2;
+}
+
+/* defaults for profile picture */
+.hero-banner img{
+  position: absolute;
+  bottom: 12%;
+  right: 4%;
+  border: 6px solid var(--lightblue);
+  height: 80%;
+  width: auto 40%;
 }
 
 /* Defaults for Page Sections */
-.page-section{
-  width: 100%;
-  /* margin-left: 20px; */
-  /* margin-right: 20px; */
-  /* background-color: lightblue; */
-  float: left;
-}
-
 .page-section h2{
   float: left;
   text-align: right;
   width: 20%;
-  color: var(--navy);
+  color: var(--darkblue);
   font-size: 40px;
   margin: 10px;
   padding: 10px;
-  border-right: solid var(--navy);
-  /* word-wrap: break-word; */
 }
 
 .content{
@@ -114,37 +110,73 @@ p {
   display: flex;
   flex-flow: row wrap;
   margin-right: 10px;
-  padding: 10px;
+  padding-left: 10px;
+  border-left: solid var(--darkblue);
+  margin-bottom: 25px;
 }
 
 /* About Me Section */
 
 /* Work */
-/* Defualts for larger project section */
-.main-project{
-  width: 100%;
-  height: 400px;
-  padding: 10px;
+/* grid set up */
+#grid-container{
+  position: relative;
+  width: 70%;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: 
+    "mainProject mainProject"
+    "project2 project3"
+    "project4 project5"
 }
 
-.project {
-  width: 50%;
-  height: 200px;
-  padding: 10px;
+.project{
+  border: solid var(--lightblue);
 }
 
-.content img{
-  display: flex;
+.project img{
   width: 100%;
   height: 100%;
-  border: 6px solid var(--lightblue);
 }
 
+#main-project{
+  grid-area: mainProject;
+}
+
+#project2{
+  grid-area: project2;
+  background-color: aqua;
+}
+
+#project3{
+  grid-area: project3;
+  background-color: blue;
+}
+
+#project4{
+  grid-area: project4;
+  background-color: yellowgreen;
+}
+
+#project5{
+  grid-area: project5;
+  background-color: blueviolet;
+}
+
+/* defaults for card headings */
+.card-heading{
+  background-color: var(--lightblue);
+  width: 20%;
+  height: fit-content;
+  padding: 10px;
+  position: absolute;
+}
 
 /* Contact */
-
-
-#contact {
+#contact{
   display: flex;
 }
 
@@ -155,10 +187,8 @@ p {
 }
 
 #contactcontent a{
-  cursor: pointer;
+  font-size: 20px;
+  color: var(--darkblue);
   text-decoration: none;
-  padding: 10px;
-  justify-content: space-evenly;
-  color: var(--navy);
-  border-bottom: solid var(--navy);
+  border-bottom: solid var(--darkblue);
 }

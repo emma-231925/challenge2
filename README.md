@@ -15,9 +15,15 @@ To access this webpage, please use the following URL:
 
 My portfolio provides information about my background, links to my deployed applications (which will be updated over the coming weeks) and how to contact me. Try using the navigation bar to navigate to each section of the webpage and click on the images in my work section to be taken to the deployed application!
 
+### About Me Section
+
 ![Final website, showing about me section](assets/images/webpage1.png)
 
+### Work Section
+
 ![Final website, showing work section](assets/images/webpage2.png)
+
+### Contact Section
 
 ![Final website, showing contact section](assets/images/contactsection.png)
 ## Credits

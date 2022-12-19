@@ -268,21 +268,13 @@ a{
   }
 }
 
-/* mobile */
-@media all and (max-width:423px){
+/* final breaking point */
+@media all and (max-width:434px){
+  #navBar h1{
+    font-size: 25px;
+  }
+
   #navigation a{
     font-size: 8px;
-  }
-  #navBar h1{
-    font-size: 20px;
-  }
-  .page-section h2{
-    font-size: 18px;
-  }
-  .content{
-    font-size: 10px;
-  }
-  #contactcontent a{
-    font-size: 10px;
   }
 }

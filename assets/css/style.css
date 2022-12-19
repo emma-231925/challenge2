@@ -42,13 +42,16 @@ h6 {
   padding: 10px;
   font-size: 30px;
   color: var(--darkblue);
+  text-align: center;
 }
 
 /* defaults for navigation buttons */
 #navigation{
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  width: 30%;
+  width: 40%;
+  height: 80%;
   cursor: pointer;
   text-decoration: none;
   padding: 10px;
@@ -102,7 +105,9 @@ h6 {
   color: var(--darkblue);
   font-size: 40px;
   margin: 10px;
+  margin-top: 0px;
   padding: 10px;
+  padding-top: 5px;
 }
 
 .content{
@@ -170,7 +175,7 @@ h6 {
 /* defaults for card headings */
 .card-heading{
   background-color: var(--lightblue);
-  width: 20%;
+  width: 25%;
   height: fit-content;
   padding: 10px;
   position: absolute;
@@ -192,4 +197,41 @@ h6 {
   color: var(--darkblue);
   text-decoration: none;
   border-bottom: solid var(--darkblue);
+}
+
+/* media responsiveness for mobiles */
+@media all and (max-width:480px){
+  #navBar h1{
+    width: 45%;
+    height: 70%;
+    font-size: 28px;
+  }  
+
+  #navigation a{
+    font-size: 10px;
+  }
+
+  .content{
+    font-size: 10px;
+  }
+
+  .page-section h2{
+    font-size: 20px;
+  }
+
+  .card-heading{
+    width: 30%;
+  }
+
+  .card-heading h3{
+    font-size: 12px;
+  }
+
+  .card-heading p{
+    font-size: 10px;
+  }
+
+  #contactcontent a{
+    font-size: 10px;
+  }
 }

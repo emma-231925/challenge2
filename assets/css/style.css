@@ -277,7 +277,7 @@ a{
 }
 
 /* mobile */
-@media all and (max-width:423px){
+/* @media all and (max-width:423px){
   #navigation a{
     font-size: 8px;
   }
@@ -297,4 +297,4 @@ a{
   #contactcontent a{
     font-size: 10px;
   }
-}
+} */

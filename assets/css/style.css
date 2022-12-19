@@ -271,7 +271,7 @@ a{
 /* final breaking point */
 @media all and (max-width:434px){
   #navBar h1{
-    font-size: 25px;
+    font-size: 22px;
   }
 
   #navigation a{

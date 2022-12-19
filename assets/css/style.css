@@ -267,3 +267,14 @@ a{
     font-size: 10px;
   }
 }
+
+/* final breaking point */
+@media all and (max-width:434px){
+  #navBar h1{
+    font-size: 25px;
+  }
+
+  #navigation a{
+    font-size: 8px;
+  }
+}

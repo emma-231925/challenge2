@@ -163,7 +163,6 @@ a{
 
 #project2{
   grid-area: project2;
-  background-color: aqua;
 }
 
 #project3{
@@ -258,8 +257,8 @@ a{
   }
 }
 
-/* media responsiveness for mobiles */
-@media all and (max-width:497px){
+/* breaking point 3 */
+@media all and (max-width:496px){
   #navigation a{
     font-size: 10px;
   }

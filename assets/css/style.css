@@ -243,6 +243,13 @@ a{
 }
 
 /* breaking point 2 */
+@media all and (max-width:608px){
+  #navigation a{
+    font-size: 12px;
+  }
+}
+
+/* breaking point 3 */
 @media all and (max-width:496px){
   #navigation a{
     font-size: 10px;

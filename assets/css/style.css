@@ -24,6 +24,10 @@ h6 {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Navigation Bar CSS */
 #navBar{
   width: auto;
@@ -35,7 +39,7 @@ h6 {
   background-color: var(--darkblue);
 }
 
-/* defaults for heading */
+/* defaults for name heading */
 #navBar h1{
   background-color: var(--lightblue);
   width: 30%;
@@ -61,7 +65,6 @@ h6 {
 #navigation a{
   font-size: 20px;
   color: var(--lightblue);
-  text-decoration: none;
   border-bottom: solid var(--lightblue);
 }
 
@@ -99,6 +102,10 @@ h6 {
 }
 
 /* Defaults for Page Sections */
+.page-section a{
+  color: var(--darkblue);
+  font-weight: bold;
+}
 .page-section h2{
   float: left;
   text-align: right;
@@ -120,8 +127,6 @@ h6 {
   border-left: solid var(--darkblue);
   margin-bottom: 25px;
 }
-
-/* About Me Section */
 
 /* Work */
 /* grid set up */
@@ -196,7 +201,6 @@ h6 {
 #contactcontent a{
   font-size: 20px;
   color: var(--darkblue);
-  text-decoration: none;
   border-bottom: solid var(--darkblue);
 }
 

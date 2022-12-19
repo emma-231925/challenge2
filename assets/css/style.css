@@ -207,21 +207,6 @@ a{
 
 /* media responsiveness for first breaking point */
 @media all and (max-width:794px){
-  .page-section h2{
-    font-size: 25px;
-  }
-
-  #navigation a{
-    font-size: 15px;
-  }
-
-  #contactcontent a{
-    font-size: 15px;
-  }
-}
-
-/* media responsiveness for second breaking breaking point */
-@media all and (max-width:794px){
   #navBar h1{
     width: 45%;
     height: 70%;
@@ -229,7 +214,7 @@ a{
   }  
 
   #navigation a{
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .page-section h2{
@@ -257,7 +242,7 @@ a{
   }
 }
 
-/* breaking point 3 */
+/* breaking point 2 */
 @media all and (max-width:496px){
   #navigation a{
     font-size: 10px;
@@ -275,26 +260,3 @@ a{
     font-size: 10px;
   }
 }
-
-/* mobile */
-/* @media all and (max-width:423px){
-  #navigation a{
-    font-size: 8px;
-  }
-
-  #navBar h1{
-    font-size: 20px;
-  }
-
-  .page-section h2{
-    font-size: 18px;
-  }
-
-  .content{
-    font-size: 10px;
-  }
-
-  #contactcontent a{
-    font-size: 10px;
-  }
-} */

@@ -11,7 +11,7 @@ N/A
 
 ## Usage
 
-To access this webpage, please use the following URL: 
+To access this webpage, please use the following URL: (https://emma-231925.github.io/challenge2/)
 
 My portfolio provides information about my background, links to my deployed applications (which will be updated over the coming weeks) and how to contact me. Try using the navigation bar to navigate to each section of the webpage and click on the images in my work section to be taken to the deployed application!
 
